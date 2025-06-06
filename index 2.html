@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUGGER 台灣官方網站</title>
+  <meta name="description" content="JUGGER 台灣推廣網站，介紹歐洲團隊運動 Jugger 的起源、規則、武器與活動。從武陵高中出發，打造台灣的 Jugger 社群！">
+  <meta name="keywords" content="Jugger 台灣, Jugger 運動, 武陵高中, 團隊運動, 打擊運動, 自製武器, 校園活動">
+  <meta name="author" content="Jugger Taiwan 團隊">
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+    window.onload = () => showSection('home');
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-red-600 text-white p-4 text-center text-xl font-bold">
+    JUGGER 台灣官方網站
+  </header>
+  <nav class="flex flex-wrap justify-center bg-white shadow p-4">
+    <button onclick="showSection('home')" class="mx-2 text-red-600 hover:underline">首頁</button>
+    <button onclick="showSection('about')" class="mx-2 text-red-600 hover:underline">關於 JUGGER</button>
+    <button onclick="showSection('weapons')" class="mx-2 text-red-600 hover:underline">武器與角色</button>
+    <button onclick="showSection('rules')" class="mx-2 text-red-600 hover:underline">規則與玩法</button>
+    <button onclick="showSection('diy')" class="mx-2 text-red-600 hover:underline">自製武器</button>
+    <button onclick="showSection('videos')" class="mx-2 text-red-600 hover:underline">精彩影片</button>
+    <button onclick="showSection('events')" class="mx-2 text-red-600 hover:underline">活動與賽事</button>
+    <button onclick="showSection('join')" class="mx-2 text-red-600 hover:underline">參與方式</button>
+    <button onclick="showSection('support')" class="mx-2 text-red-600 hover:underline">支持我們</button>
+    <button onclick="showSection('contact')" class="mx-2 text-red-600 hover:underline">聯絡我們</button>
+  </nav>
+  <main class="p-6 max-w-4xl mx-auto">
+    <section id="home" class="section hidden">
+      <h2 class="text-2xl font-bold mb-2">歡迎來到 JUGGER 台灣官方網站！</h2>
+      <p>這裡是我們揮汗奔跑、打造武器、一起笑著倒數五顆石頭的地方。從武陵高中出發，我們希望讓更多人認識這項來自歐洲的團隊運動，無論你是想打比賽、動手做武器，還是單純想來場熱血又安全的對戰，這裡都歡迎你加入！</p>
+    </section>
+    <section id="about" class="section hidden">
+      <h2 class="text-2xl font-bold mb-2">關於 JUGGER</h2>
+      <p>JUGGER 是一項結合格鬥、球類與戰術合作的團隊運動，源自 1989 年的末日電影《The Salute of the Jugger》。比賽中，兩隊選手使用泡棉製安全武器，配合跑者奪球，將球投入對方目標區（MAL）來得分。這項運動由歐洲發展至今，規則逐漸明確，強調公平、安全、節奏與團隊合作。台灣的推廣由武陵高中的學生自發展開，從自製武器、設計教學到舉辦比賽，一步一步走出屬於我們的 JUGGER 路線。</p>
+    </section>
+    <section id="weapons" class="section hidden">
+      <h2 class="text-2xl font-bold mb-2">武器與角色</h2>
+      <ul class="list-disc pl-6">
+        <li>跑者（Runner）：唯一能拿球得分的選手</li>
+        <li>雙劍（Double Short Swords）：機動靈活，可近距離壓制對手</li>
+        <li>盾劍（Sword and Shield）：進可攻退可守，是場上控制節奏的重要角色</li>
+        <li>長劍（Longsword）：攻擊範圍廣，可掃擊與刺擊</li>
+        <li>關刀（Staff）：雙手持握、不可刺擊，橫掃能力強大</li>
+        <li>雙頭棒（Q-tip）：兩端皆可攻擊，節奏快速、需靈活切換手法</li>
+      </ul>
+      <p class="mt-2 text-sm">*目前不含鏈球（Chain），因屬纏繞類武器，初學不建議使用。*</p>
+    </section>
+    <!-- 其餘分頁略，後續可補齊 -->
+  </main>
+</body>
+</html>
